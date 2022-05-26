@@ -1,0 +1,19 @@
+{
+  "name": "a3-studbud-by-edison-",
+  "version": "1.0.0",
+  "description": "The One and Only StudBud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edilambsheep/A3-StudBud-by-Edison-.git"
+  },
+  "author": "Edison Lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edilambsheep/A3-StudBud-by-Edison-/issues"
+  },
+  "homepage": "https://github.com/edilambsheep/A3-StudBud-by-Edison-#readme"
+}
