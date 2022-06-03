@@ -1,4 +1,11 @@
 # A3-StudBud-by-Edison-
+##### Visual Identity - Reflecting on tutor feedback 
+
+A tutor recommended that the visual layout be more refined on the design and visual layout of the proposed 'StudBud' project. As such, upon referring to the heuristic #8 Aesthetic and minimalist design, when the mockups were shown to potential end-users, the colour choices seemed distracting, incoherent and not visually captivating. As such, as the visual identity of Studbud was refined, incorporating a simplified colour palette was adopted. 
+
+Further iteration was made in reference to Nielsen Norman Group's 5 principles of visual design in UX, where ***'Graphics that take advantage of the principles of good visual design can drive engagement and increase usability'*** (Gordon, 2020). 
+
+
 
 
 ##### References 
