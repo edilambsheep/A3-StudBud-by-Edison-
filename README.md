@@ -7,6 +7,11 @@ Further iteration was made in reference to Nielsen Norman Group's 5 principles o
 
 
 
+![old logo](https://github.com/edilambsheep/A3-StudBud-by-Edison-/blob/main/logoone.png)
+
+![new logo](https://github.com/edilambsheep/A3-StudBud-by-Edison-/blob/main/studbudicon.png)
+
+
 
 ##### StudBud Language Tone 
 
