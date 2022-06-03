@@ -8,223 +8,221 @@
   <meta name="description" content="" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" href="studbudfavicon.png">
-
-
 </head>
-
 
 <body>
 
-<!--W3 School Navigation bar -->
+<!-- Navigation bar from W3 School -->
 <div class="topnav" id="myTopnav">
-  <a href="#home">About StudBud</a>
-  <a href="#news">Task List </a>
-  <a href="#contact">Stop Watch Timer </a>
-  <a href="#about">Music Player </a>
-  <a href="#about">Pomodoro </a>
-  <a href="#about">Dictionary </a>
-  <a href="#about">Kanban Board </a>
-
-
-  
+  <a href="#about">About StudBud</a>
+  <a href="#tasklist">Task List </a>
+  <a href="#stopwatch">Stopwatch Timer </a>
+  <a href="#musicplayer">Music Player </a>
+  <a href="#pomodoro">Pomodoro </a>
+  <a href="#dictionary">Dictionary </a>
+  <a href="#kanban">Kanban Board </a>
+  <!-- Hamburger icon for nav mobile-->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-
-
-<!-- Displays 'StudBud'introduction section -->
-    <div class="row" style="padding-top: 50px; background-color: #FCFAF8; ">
+    <!-- Display 'About StudBud' section -->
+    <div id="about" class="row" style="padding-top: 50px; background-color: #FCFAF8; ">
+       <!-- Displays background information on StudBud -->
         <div class="sectioncard">
-                <h1 style="padding-top:30px; ">Welcome to StudBud!</h1> 
-                <h3> Your Success Starts Here.</h3>
-                  <p> What are the qualities that make up a successful student? </p>
-                  <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
+                <h1 style="padding-top:30px;"> Welcome to StudBud!</h1> 
+                  <h3> Your Success Starts Here.</h3>
+                    <p> What are the qualities that make up a successful student? </p>
+                    <ol>
+                      <li> <p> Perseverance </p> </li>
+                      <li> <p> Delay gratification and focus on the big picture </p></li>
+                      <li> <p> Time management and organisational skills  </p></li>
+                      <li> <p> A balance between fun and work  </p></li>
+                    </ol>
+                    <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
         </div>
 
+        <!-- Display image to show StudBud is compatible on both mobile and desktop -->
         <div class="sectioncard" style="padding-right:0; padding-top:0; padding-bottom: 6rem; ">
-          <img src="titlecover.png" class="responsive" style=" width: 100%; height: auto; float:right;">
-       </div>
-
-      </div>
-
-
-     <!-- This section displays TASK LIST with context-->
-      <div class="row">
-        <div class="sectioncard" style="background-color: #EBEADE;">
-                <h2>Tast List</h2> 
-                <p> Do you have a hard time keeping up with tasks? We have designed a to-do list to enable you to add and organise your tasks in order of priority.  </p>
-
-                <h3> Benefits </h3>
-                <p> The main benefit is to help you stay organised and have a clear outline of the tasks you have got to do and those you have completed. Completing a task and crossing it out will offer you a sense of progress and achievement. </p>
-
-                 <p> We warmly encourage you to give our task list a try. </p>
-                
+           <img src="titlecover.png" class="responsive" style=" width: 100%; height: auto; float:right;">
         </div>
+     </div>
 
-        <div class="sectioncard" style="background-color: #EBEADE;">
-       </div>
-
-      </div>
-
+     <!-- Displays 'TasK List' section-->
+      <div class="row">
+         <!-- Displays background information on task list -->
+          <div class="sectioncard" style="background-color: #EBEADE;">
+                <h2>Tast List</h2> 
+                  <p> Do you have a hard time keeping up with tasks? We have designed a to-do list to enable you to add and organise your tasks in order of priority.  </p>
+                      <p> The main benefit is to help you stay organised and have a clear outline of the tasks you have got to do and those you have completed. Completing a task and crossing it out will offer you a sense of progress and achievement. </p>
+                      <p> We warmly encourage you to give our task list a try. </p>
+          </div>
+        <!-- Displays task list -->
+        <div id="tasklist"class="sectioncard" style="background-color: #EBEADE;">
+           <form id="taskform">
+              <label for ="task"> <p> Task: </p></label>
+                <input type="text" name="task" id="taskInput" style="height: 40px;border-radius: 10px;">
+                 <br> 
+             <!--- Date input -->
+             <label for="dueDate"> <p> Due Date: </p></label>
+                <input type="date" name="dueDate" id="dueDateInput" style="height: 40px; border-radius: 10px;">
+                 <br> 
+             <!-- Time input -->
+             <label for="completionTime"> <p> Completion Time: </p></label>
+               <input type="time" name="completionTime" id="completionTimeInput" style="height: 40px; border-radius: 10px;">
+                <br>  
+             <label for="estimatedTime"> <p> Estimated Completion Time (in minutes):</p> </label>
+               <input type="number" name="estimatedTime" id="estimatedTimeInput" style="width: 40%; height: 40px; border-radius: 10px;">
+                <br> 
+             <!-- Priority -->   
+             <label for="priority"> <p> Task Priority: </p> </label>
+              <select name="priority" id="priorityInput"> 
+                <option value=""> <p> Select One </p> </option>
+                <option value="low"> Low </option>
+                <option value="medim"> Medium </option>
+                <option value="high"> High </option>
+              </select> 
+              <br> 
+              <button type="submit">Submit </button>
+          </form>
     
-     <!-- This section displays STOP WATCH TIMER  with context-->
-     <div class="row">
-      <div class="sectioncard" style=" background-color: #FCFAF8;">
-              <h2>Stop Watch Timer</h2> 
-                <p> What are the qualities that make up a successful student? </p>
-                <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
+          <ul id="tasklist"></ul>
+       </div>
       </div>
 
-      <div class="sectioncard" style=" background-color: #FCFAF8;">
-
-        <div class="wrapper">
+     <!-- Displays 'Stop Watch Timer' section-->
+     <div id="stopwatch"class="row">
+       <!-- Displays background information on stop watch timer -->
+       <div class="sectioncard" style=" background-color: #F8F6F0;">
+          <h2>Stop Watch Timer</h2> 
+            <p> We have implemented a stopwatch timer to allow you to monitor your time as you study. It can come in handy. Feel free to use it for other purposes.  </p>
+       </div>
+       <!-- Displays stop watch timer. Code is sourced from Cathy Dutton -->
+       <div class="sectioncard" style=" background-color: #F8F6F0;">
+        <div class="wrapper" style="width: 100%;">
+          <!-- Displays stop watch timer buttons to interact. Code is sourced from Cathy Dutton -->
           <p><span id="seconds">00</span>:<span id="tens">00</span></p>
           <button id="button-start">Start</button>
           <button id="button-stop">Stop</button>
           <button id="button-reset">Reset</button>
-          </div> 
-          
-        
+         </div> 
+       </div>
      </div>
 
-    </div>
-
-
-     <!-- This section displays MUSIC PLAYER  with context-->
-     <div class="row">
-      <div class="sectioncard" style="background-color: #EBEADE;">
-              <h2>Music Player</h2> 
+     <!-- Displays 'Music player' section -->
+     <div id="musicplayer"class="row">
+        <!-- Displays background information on music player -->
+        <div class="sectioncard" style="background-color: #EBEADE;">
+            <h2>Music Player</h2> 
              <p> As StudBud, we firmly believe listening to music can positively affect studying. 
-            </p>
-            <p> Music that is soothing and relaxing can assist students such as yourself in helping beat any stress or anxiety you may experience due to studying. Also, music can assist students with memorisation, create a positive mood, and indirectly boost motivation (Davis, 2022).. </p>
-           <p> We have included an invigorating music video from Takashi Kokubo, featuring his 1993 album <strong> 'Oasis Of The Wind II ～ A Story Of Forest And Water'</strong>.  
-          </p>
-          <p>
-            We are keen to incorporate a music player in the foreseeable future. Nevertheless, we warmly encourage you to give the video a listen in the meantime. </p> 
-
-
-      </div>
-
-      <div class="sectioncard" style="background-color: #EBEADE;">
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/rWEI9y6PElo" title="YouTube video player">
-        </iframe>
-        
+             </p>
+             <p> Music that is soothing and relaxing can assist students such as yourself in helping beat any stress or anxiety you may experience due to studying. Also, music can assist students with memorisation, create a positive mood, and indirectly boost motivation (Davis, 2022).. </p>
+             <p> We have included an invigorating music video from Takashi Kokubo, featuring his 1993 album <strong> 'Oasis Of The Wind II ～ A Story Of Forest And Water'</strong>.  
+             </p>
+             <p> We are keen to incorporate a music player in the foreseeable future. Nevertheless, we warmly encourage you to give the video a listen in the meantime. </p> 
+        </div>
+         <!-- Displays music player -->
+        <div class="sectioncard" style="background-color: #EBEADE;">
+          <!-- Displays music clip. Sourced from 'should be asleep' on YouTube-->
+          <iframe width="100%" height="500px" src="https://www.youtube.com/embed/rWEI9y6PElo" title="YouTube video player">
+          </iframe> 
+       </div>
+     </div>
+  
+     <!-- Displays Pomodoro section-->
+     <div id="pomodoro" class="row">
+        <!-- Displays background information on pomodoro -->
+        <div class="sectioncard" style=" background-color: #F8F6F0;">
+          <h2>Pomdoro</h2> 
+           <p>You either might know this or have no clue what it is—introducing our Pomodoro timer.  </p>
+           <p>Pomodoro is a time management method that uses a timer to break work into intervals, usually 25 minutes, followed by 5 to 10 minute breaks. After the fourth interval, you should take a more extended break. </p>
+           <p>One of the benefits is that it can help you keep your mind fresh and focused. It is really easy to use, and we strongly recommend giving ours a try.  </p>
+        </div>
+        <!-- Displays Pomodoro timer. The code is sourced from Raj Gupta.-->
+        <div class="sectioncard" style=" background-color: #F8F6F0;">
+            <div id="pomodoro-app style="width:100%;">
+              <div id="container">
+                  <div id="timer">
+                   <div id="time">
+                     <span id="minutes">25</span>
+                     <span id="colon">:</span>
+                     <span id="seconds">00</span>
+                   </div>
+                 </div>
+                 <!--Displays Pomodoro timer buttons to interact. The code is sourced from Raj Gupta.--> 
+                 <div id="buttons">
+                   <button id="work">Work</button>
+                   <button id="shortBreak">Short Break</button>
+                   <button id="longBreak">Long Break</button>
+                   <button id="stop">Stop</button>
+                </div>
+             </div>  
+           </div>
+       </div>
      </div>
 
-    </div>
-  
 
-       <!-- This section displays POMODORO  with context-->
-       <div class="row">
-        <div class="sectioncard" style=" background-color: #F8F6F0;">
-                <h2>Pomdoro</h2> 
-                  <p> What are the qualities that make up a successful student? </p>
-                  <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
+     <!-- Displays Dictionary section-->
+     <div id="dictionary"class="row">
+        <!-- Displays background information on dictionary -->
+        <div class="sectioncard" style="background-color: #EBEADE;">
+          <h2>Dictionary</h2> 
+          <p> Occasionally stumble on convoluted words as you peruse through literary sources, exasperated? </p>
+          <p> Didn't get that? Ignore that. We have provided a dictionary for you to search for words that you may not understand or can't recall. Nothing better than expanding your vocabulary skills.  </p>
+          <p> To use this feature, please type in a word and click on 'Search' The definition will be displayed. I might search up what <em>'sesquipedalian' </em>means while writing this up.  </p>
         </div>
-  
-        <div class="sectioncard" style=" background-color: #F8F6F0;">
-
-        
- <div id="pomodoro-app">
-  <div id="container">
-    <div id="timer">
-      <div id="time">
-        <span id="minutes">25</span>
-        <span id="colon">:</span>
-        <span id="seconds">00</span>
-      </div>
-    </div>
-
-  <!--This section is for users to interact with pomodoro timer  --> 
-    <div id="buttons">
-      <button id="work">Work</button>
-      <button id="shortBreak">Short Break</button>
-      <button id="longBreak">Long Break</button>
-      <button id="stop">Stop</button>
-    </div>
-  </div>  
-</div>
-  
-      </div>
-      </div>
-
-
-           <!-- This section displays DICTIONARY  with context-->
-           <div class="row">
-            <div class="sectioncard" style="background-color: #EBEADE;">
-                    <h2>Dictionary</h2> 
-                      <p> What are the qualities that make up a successful student? </p>
-                      <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
-            </div>
-      
-            <div class="sectioncard" style="background-color: #EBEADE;">
-
-             <!-- Section for user to look up a word in the dictionary box  --> 
-
-<div class="dictionary">
-  <h3> Search up a word </h3>
-   
- <form class="searchForm">
- <input type="search" class="txtBox">
- <input type="submit" class="submit-btn"value="Search">
- </form>
-   
-  <div class="search-result">
- <h3 class="search-word"></h3>
- <p class="description"></p>
-   </div>
- </div>
- 
-           </div>
-      
-          </div>
-    
-      
-            <!-- This section displays KANBAN BOARD  with context-->
-            <div class="row">
-              <div class="sectioncard" style="background-color: #F8F6F0;">
-                      <h2>Kanban Board</h2> 
-                        <p> What are the qualities that make up a successful student? </p>
-                        <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
-              </div>
-        
-              <div class="sectioncard" style=" background-color: #F8F6F0;">
+        <!-- Displays dictionary -->
+        <div class="sectioncard" style="background-color: #EBEADE;">
+           <!-- Section for user to look up a word in the dictionary box. The code is sourced from yogeshwaran. --> 
+           <div class="dictionary" style="width:100%;">
+             <h3> Search up a word </h3>
+             <form class="searchForm">
+               <input type="search" class="txtBox">
+               <input type="submit" class="submit-btn"value="Search">
+             </form>
+              <!-- Displays searched word and its definition. The code is sourced from yogeshwaran. --> 
+             <div class="search-result">
+               <h3 class="search-word"  style="text-align: center;"></h3>
+               <p class="description"></p>
              </div>
+           </div>
+         </div>
+      </div>
     
-            </div>
-
       
- <!-- This section displays a reminder for users to take adequate breaks -->
- <div class="row">
-  <div class="sectioncard" style="background-color: #EBEADE;">
-          <h2>Remember to take adequate breaks</h2> 
-            <p> What are the qualities that make up a successful student? </p>
-            <p> Anyone can possess these qualities, and we have created an all-in-one studying platform catered to those aspiring to make a positive change. </p>
-  </div>
+      <!-- Display Kanban Board section -->
+      <div id="kanban" class="row">
+             <!-- Display Kanban Board background information -->
+              <div class="sectioncard" style="background-color: #F8F6F0;">
+                  <h2>Kanban Board</h2> 
+                    <p>Are you struggling to keep track and organised with tasks?   </p>
+                    <p> Not to worry. We will be introducing a kanban board to help you visibly and visually monitor the progress of tasks. 
+                    </p>
+                    <p> In the meantime, we recommend creating three columns: to do, in progress and complete either online or on a piece of paper. Then, write up tasks you have to do, such as on a sticky note, and place and move accordingly with the respective columns. </p>
+                    <p>You can also add more columns if you're into the details.  </p>
+              </div>
+              <!-- Display Kanban Board-->
+              <div class="sectioncard" style=" background-color: #F8F6F0;">
+                <img src="kanban.png" style="width:70%; float:right; ">
+             </div>
+     </div>
 
-  <div class="sectioncard" style="padding-right:0; padding-bottom:0; 6rem; background-color: #EBEADE;">
-    <img src="breakimage.png" class="responsive" style=" width: 100%; height: auto; float:right;">
- </div>
+     <!-- This section displays a reminder for users to take adequate breaks -->
+     <div class="row">
+       <div class="sectioncard" style="background-color: #EBEADE;">
+           <h2>Remember to take adequate breaks</h2> 
+             <p> Sometimes it can be overlooked or underlooked as a waste of precious time, but you need to know you are also precious, and we are not robots that can work and work. We're humans, after all.</p>
+             <p> That is why we strongly recommend you take adequate and healthy breaks. This can be anywhere between 5 minutes to an hour. Do what feels suitable for you and only you.  </p>
+             <p>Maybe brew some jasmine green tea, cook a healthy snack, take a relaxing shower, or go for a walk with a furry friend? </p>
+       </div>
+       <!-- This section displays an image that shows people taking healthy breaks -->
+       <div class="sectioncard" style="padding-right:0; padding-bottom:0; background-color: #EBEADE;">
+        <img src="breakimage.png" class="responsive" style=" width: 100%; height: auto; float:right;">
+       </div>
+    </div>
 
-</div>
-
-
-
-
-
-      <script src="script.js"> </script>
-
-
-
-
-      
+<script src="script.js"> </script>
+  
 </body>
-
-
-
-
-
-
 </html>
