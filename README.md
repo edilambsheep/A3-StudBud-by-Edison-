@@ -8,9 +8,18 @@ Further iteration was made in reference to Nielsen Norman Group's 5 principles o
 
 
 
+##### StudBud Language Tone 
+
+The tone of the website was general, casual and conversational. This was to create a warm website that is inviting to future users. 
+
+
+
+
 ##### References 
 
 Davis, N. (2022). Is it Good to Listen to Music While Studying? Retrieved from Study.com website: https://study.com/academy/popular/is-it-good-to-listen-to-music-while-studying.html#:~:text=Benefits%20of%20Studying%20with%20Music&text=Music%20that%20is%20soothing%20and
+
+Dolin, A. (2019). How Students With ADHD Can Be Successful in College. Verywell Mind. https://www.verywellmind.com/college-students-with-adhd-20820
 
 Dutton, C. (n.d.). Retrieved June 3, 2022, from CodePen website: https://codepen.io/cathydutton/pen/xxpOOw
 
