@@ -5,19 +5,31 @@ A tutor recommended that the visual layout be more refined on the design and vis
 
 Further iteration was made in reference to Nielsen Norman Group's 5 principles of visual design in UX, where ***'Graphics that take advantage of the principles of good visual design can drive engagement and increase usability'*** (Gordon, 2020). 
 
-
+This included a new logo for StudBud. The initial wordmark was seen as too minimal and lacklustre, not intriguing potential end-users. Therefore, a combination mark was created using a strong colour contrast and fun imagery to appeal to end-users. The stars and a book symbolising success and learning. 
 
 ![old logo](https://github.com/edilambsheep/A3-StudBud-by-Edison-/blob/main/logoone.png)
 
 ![new logo](https://github.com/edilambsheep/A3-StudBud-by-Edison-/blob/main/studbudicon.png)
 
+It would be later decided that the logo will only be used for future marketing and advertising purposes. For example, in the future, should it become a mobile application, the logo can be used. 
+
+
+![favicon](https://github.com/edilambsheep/A3-StudBud-by-Edison-/blob/main/studbudfavicon.png)
+
+This is the allocated favicon. Compared to the logo, it has been simplified due to its small dimensions. 
+
+##### Addition
+
+An addition from the previous mockup was a section dedicated to remind users to take adequate breaks. This was seen as important to prospect users who may sometimes need to remind themselves to not exhaust themselves, mentally and physically. It was elaborated that breaks could come in any form and as long as it is necessary for future users. This ties in with the fourth attribute of a successful student. 
+
+##### Limitations 
+
+Due to time constraints, features were not fully functional. Moving forward, I hope StudBud can be a fully fledged functioning website that will be of good and beneficial use for students in the hopeful future. 
 
 
 ##### StudBud Language Tone 
 
 The tone of the website was general, casual and conversational. This was to create a warm website that is inviting to future users. 
-
-
 
 
 ##### References 
