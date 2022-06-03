@@ -18,6 +18,9 @@ It would be later decided that the logo will only be used for future marketing a
 
 This is the allocated favicon. Compared to the logo, it has been simplified due to its small dimensions. 
 
+##### Typographic Hierarchy 
+In the design mockups, the headings and subheadings blended with the body text, and as such, did not demonstrate typography hierarchy. Moving onwards, a serif type family of ‘Cooperlbt’ was used for the purpose of headings, which would then be contrasted with a ‘suisse regular’ sans serif typeface specifically allocated for the body text. 
+
 ##### Addition
 
 An addition from the previous mockup was a section dedicated to remind users to take adequate breaks. This was seen as important to prospect users who may sometimes need to remind themselves to not exhaust themselves, mentally and physically. It was elaborated that breaks could come in any form and as long as it is necessary for future users. This ties in with the fourth attribute of a successful student. 
